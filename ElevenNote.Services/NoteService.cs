@@ -25,7 +25,8 @@ namespace ElevenNote.Services
                     OwnerId = _userId,
                     Title = model.Title,
                     Content = model.Content,
-                    CreatedUtc = DateTimeOffset.Now
+                    CreatedUtc = DateTimeOffset.Now,
+                    ClassSubject = model.ClassSubject
                 };
 
             using (var ctx = new ApplicationDbContext())
@@ -52,7 +53,7 @@ namespace ElevenNote.Services
                                     CreatedUtc = e.CreatedUtc
                                 }
                         );
-​
+
                 return query.ToArray();
             }
         }

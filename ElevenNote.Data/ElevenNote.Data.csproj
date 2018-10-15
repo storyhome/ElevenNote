@@ -61,6 +61,10 @@
     <Compile Include="Migrations\201810121953505_addedClassSubject.Designer.cs">
       <DependentUpon>201810121953505_addedClassSubject.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201810151734178_updatenoteid.cs" />
+    <Compile Include="Migrations\201810151734178_updatenoteid.Designer.cs">
+      <DependentUpon>201810151734178_updatenoteid.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Note.cs" />
     <Compile Include="IdentityModels.cs" />
@@ -76,6 +80,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201810121953505_addedClassSubject.resx">
       <DependentUpon>201810121953505_addedClassSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810151734178_updatenoteid.resx">
+      <DependentUpon>201810151734178_updatenoteid.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
